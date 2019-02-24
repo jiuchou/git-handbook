@@ -28,11 +28,18 @@
 
 ### 创建仓库与分支
 
-1. 登陆到Github，创建一个新的仓库，名称我们就命名为`gitbook-tutorial`，这样我就得到一个`gitbook-tutorial`仓库。
+1. 登陆到Github，创建一个新的仓库，名称我们就命名为`gitbook-tutorial`，这样我就得到一个`gitbook-tutorial`仓库
 2. 克隆仓库到本地： `git clone git@github.com:/USER_NAME/gitbook-tutorial.git`
-3. 创建一个新分支： `git checkout -b gh-pages`，注意，分支名必须为`gh-pages`。
-4. 将分支push到仓库： `git push -u origin gh-pages`。
-5. 切换到主分支：`git checkout master`。
+3. 创建一个新分支： `git checkout -b gh-pages`，注意，分支名必须为`gh-pages`
+4. 使用 `gitbook build` 生成静态网页
+   ```
+   gitbook build
+   ls | grep -v _book | xargs -i rm -rf {}
+   mv _book/* .
+   rm -rf _book
+   ```
+5. 将分支push到仓库： `git push -f origin gh-pages`
+6. 切换到主分支：`git checkout master`
 
 经过这一步处理，我们已经创建了`gh-pages`分支了，有了这个分支，Github会自动为你分配一个网址。
 
