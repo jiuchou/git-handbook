@@ -1,0 +1,609 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3.Git相关 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../Chapter4/" />
+    
+    
+    <link rel="prev" href="../section3.2/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../Chapter1/">
+            
+                <a href="../../../Chapter1/">
+            
+                    
+                    1.基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../Chapter1/general-configuration.html">
+            
+                <a href="../../../Chapter1/general-configuration.html">
+            
+                    
+                    1.1.常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../Chapter1/general-command.html">
+            
+                <a href="../../../Chapter1/general-command.html">
+            
+                    
+                    1.2.常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../Chapter2/">
+            
+                <a href="../../../Chapter2/">
+            
+                    
+                    2.扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../Chapter2/general-git-code-hosting-platform.html">
+            
+                <a href="../../../Chapter2/general-git-code-hosting-platform.html">
+            
+                    
+                    2.1.常用的Git代码托管平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../AppendixA/">
+            
+                <a href="../../../AppendixA/">
+            
+                    
+                    附录A: 问题记录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../AppendixA/git-push-error.html">
+            
+                <a href="../../../AppendixA/git-push-error.html">
+            
+                    
+                    A1.1 提交失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    附录B: gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Chapter1/">
+            
+                <a href="../../Chapter1/">
+            
+                    
+                    1.安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Chapter2/">
+            
+                <a href="../../Chapter2/">
+            
+                    
+                    2.使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../Chapter2/basic-used.html">
+            
+                <a href="../../Chapter2/basic-used.html">
+            
+                    
+                    2.1.基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../Chapter2/cmd-explain.html">
+            
+                <a href="../../Chapter2/cmd-explain.html">
+            
+                    
+                    2.2.命令说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../Chapter2/make-ebook.html">
+            
+                <a href="../../Chapter2/make-ebook.html">
+            
+                    
+                    2.3.制作电子书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../../Chapter2/publish-ebook-to-gitbook.html">
+            
+                <a href="../../Chapter2/publish-ebook-to-gitbook.html">
+            
+                    
+                    2.4.发布到GitBook.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../../Chapter2/publish-ebook-to-github-pages.html">
+            
+                <a href="../../Chapter2/publish-ebook-to-github-pages.html">
+            
+                    
+                    2.5.发布到Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    3.扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../section3.1/">
+            
+                <a href="../section3.1/">
+            
+                    
+                    3.1.Markdown编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.1" data-path="../section3.1/Typora.html">
+            
+                <a href="../section3.1/Typora.html">
+            
+                    
+                    3.1.1.Typora
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../section3.2/">
+            
+                <a href="../section3.2/">
+            
+                    
+                    3.2.GitBook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3.3.Git相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../Chapter4/">
+            
+                <a href="../../Chapter4/">
+            
+                    
+                    4.问题记录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../Chapter4/gitbook-init-error.html">
+            
+                <a href="../../Chapter4/gitbook-init-error.html">
+            
+                    
+                    4.1.gitbook init报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../Chapter4/gitbook-serve-error.html">
+            
+                <a href="../../Chapter4/gitbook-serve-error.html">
+            
+                    
+                    4.2.gitbook serve报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../../Chapter4/gitbook-pdf-error.html">
+            
+                <a href="../../Chapter4/gitbook-pdf-error.html">
+            
+                    
+                    4.3.gitbook pdf报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../../AppendixA/">
+            
+                <a href="../../../AppendixA/">
+            
+                    
+                    扩展 软件相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >3.3.Git相关</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="33git&#x76F8;&#x5173;">3.3.Git&#x76F8;&#x5173;</h1>
+<ul>
+<li>&#x53C2;&#x8003;<ul>
+<li><a href="https://git-scm.com/book/zh/v2" target="_blank">Pro Git</a></li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../section3.2/" class="navigation navigation-prev " aria-label="Previous page: 3.2.GitBook插件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../Chapter4/" class="navigation navigation-next " aria-label="Next page: 4.问题记录">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3.Git相关","level":"1.5.3.3","depth":3,"next":{"title":"4.问题记录","level":"1.5.4","depth":2,"path":"gitbook-handbook/Chapter4/README.md","ref":"gitbook-handbook/Chapter4/README.md","articles":[{"title":"4.1.gitbook init报错","level":"1.5.4.1","depth":3,"path":"gitbook-handbook/Chapter4/gitbook-init-error.md","ref":"gitbook-handbook/Chapter4/gitbook-init-error.md","articles":[]},{"title":"4.2.gitbook serve报错","level":"1.5.4.2","depth":3,"path":"gitbook-handbook/Chapter4/gitbook-serve-error.md","ref":"gitbook-handbook/Chapter4/gitbook-serve-error.md","articles":[]},{"title":"4.3.gitbook pdf报错","level":"1.5.4.3","depth":3,"path":"gitbook-handbook/Chapter4/gitbook-pdf-error.md","ref":"gitbook-handbook/Chapter4/gitbook-pdf-error.md","articles":[]}]},"previous":{"title":"3.2.GitBook插件","level":"1.5.3.2","depth":3,"path":"gitbook-handbook/Chapter3/section3.2/README.md","ref":"gitbook-handbook/Chapter3/section3.2/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gitbook-handbook/Chapter3/section3.3/README.md","mtime":"2019-08-25T06:53:08.447Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-25T07:27:21.685Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
